@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var d1 = new Date();
- mongoose.connect('mongodb://localhost/Quotes',function(err, db){
+ mongoose.connect('mongodb://vasu:vasu@ds031531.mongolab.com:31531/testdb',function(err, db){
   if(err)
     console.log(err)
   else{
@@ -9,11 +9,11 @@ var d1 = new Date();
   }
 });
 
-exports.Quotes = mongoose.model('Quotes' , {
+exports.Quotes = mongoose.model('quotes' , {
 	"category":String,
 	"quote":String,
 	"createdOn":Date,
-  },"Quotes");
+  },"quotes");
 exports.UserData = mongoose.model('UserData' , {
   "email":String,
   "deviceId":String,
