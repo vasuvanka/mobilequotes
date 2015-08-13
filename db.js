@@ -1,0 +1,21 @@
+var mongoose = require('mongoose');
+var d1 = new Date();
+ mongoose.connect('mongodb://localhost/Quotes',function(err, db){
+  if(err)
+    console.log(err)
+  else{
+    var d2 = new Date();
+    console.log("time taken to connect to db is " + (d2-d1))
+  }
+});
+
+exports.Quotes = mongoose.model('Quotes' , {
+	"category":String,
+	"quote":String,
+	"createdOn":Date,
+  },"Quotes");
+exports.UserData = mongoose.model('UserData' , {
+  "email":String,
+  "deviceId":String,
+  "createdOn":Date,
+  },"UserData");
