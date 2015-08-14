@@ -1,0 +1,30 @@
+{
+  "name": "mobilequotes",
+  "version": "0.0.0",
+  "description": "mobilequotes app",
+  "main": "app.js",
+  "dependencies": {
+    "cheerio": "~0.19.0",
+    "hapi": "~8.6.1",
+    "express": "~4.12.4",
+    "ejs": "~2.3.1",
+    "body-parser": "~1.12.4",
+    "mongoose": "~4.0.5",
+    "swig": "~1.4.2",
+    "socket.io": "~1.3.5",
+    "request": "~2.57.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vasuvanka/mobilequotes.git"
+  },
+  "author": "vasuvanka",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/vasuvanka/mobilequotes/issues"
+  }
+}
