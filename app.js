@@ -6,7 +6,9 @@ var http = require('http');
 var express = require('express');
 var app = express();
 var socket=require('socket.io');
-var server = http.createServer(app).listen(3000);
+var server = http.createServer(app).listen(3000,function(err){
+console.log("server listen at http://localhost:3000/")  
+});
 var io = socket.listen(server);
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
