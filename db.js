@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var d1 = new Date();
- mongoose.connect('mongodb://vasu:vasu@ds031531.mongolab.com:31531/testdb',function(err, db){
+ mongoose.connect('mongodb://username:password@ds031531.mongolab.com:31531/testdb',function(err, db){
   if(err)
     console.log(err)
   else{
